@@ -1,0 +1,20 @@
+server:
+    port : 8082
+    
+Spring:
+  
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+    
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate.show_sql: true
+    prperties.hibernate.format_sql: true
+    
+  h2:
+    console:
+      enabled: true
+      path: /h2
